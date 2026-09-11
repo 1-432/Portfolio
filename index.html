@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dominic Oyugi — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sky" id="sky" aria-hidden="true">
+  <div class="nebula nebula-1"></div>
+  <div class="nebula nebula-2"></div>
+</div>
+
+<div class="shell">
+
+  <div class="intro-row">
+    <div class="hero-photo">
+      <img src="IMG_20250904_181438.jpg" alt="Dominic Oyugi" onerror="this.parentElement.classList.add('photo-missing')">
+    </div>
+    <div class="intro-text">
+      <p class="eyebrow">Nairobi, Kenya</p>
+      <h1>Dominic Oyugi</h1>
+      <p class="role">Full-Stack Developer &amp; Final-Year Computer Science Student</p>
+    </div>
+    <div class="status-line">
+      <span class="status-dot"></span> Available for opportunities
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab-btn active" data-target="about">About</button>
+    <button class="tab-btn" data-target="skills">Skills</button>
+    <button class="tab-btn" data-target="projects">Projects</button>
+    <button class="tab-btn" data-target="education">Education</button>
+    <button class="tab-btn" data-target="contact">Contact</button>
+  </nav>
+
+  <main class="panels-area">
+
+    <section class="panel active" id="panel-about">
+      <div class="panel-body about-body">
+        <div class="about-text">
+          <p>
+            I'm Dominic — most people call me Dommie. I'm in my final year of a BSc in Computer Science
+            at Chuka University, with a track record built on strong algorithmic problem-solving and
+            object-oriented software design. I'm drawn to work that sits at the intersection of clean
+            code and real business need — the kind of software a company actually runs on, not just a demo.
+          </p>
+          <p>
+            Alongside development, I'm building a working understanding of enterprise systems (ERP) and
+            have a growing interest in cybersecurity. I care about writing code that's efficient and
+            maintainable, and I'm currently deep in a self-directed program turning academic knowledge
+            into practical, shippable skill.
+          </p>
+        </div>
+        <div class="facts">
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">Full-Stack Development</span></div>
+          <div class="fact"><span class="fact-k">Specialization</span><span class="fact-v">Data Structures &amp; ERP Systems</span></div>
+          <div class="fact"><span class="fact-k">Education</span><span class="fact-v">BSc CS, Chuka University</span></div>
+          <div class="fact"><span class="fact-k">Interest</span><span class="fact-v">Cybersecurity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-skills">
+      <div class="panel-body skills-body">
+        <div class="skill-card">
+          <h3>Development</h3>
+          <div class="tags">
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">HTML5 &amp; CSS3</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Git &amp; GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>CS Foundations</h3>
+          <div class="tags">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOAD</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Database Systems</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Business &amp; Systems</h3>
+          <div class="tags">
+            <span class="tag">ERP Systems</span>
+            <span class="tag">Techno-Entrepreneurship</span>
+            <span class="tag">Strategic Info Systems</span>
+            <span class="tag">Cryptography Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-projects">
+      <div class="panel-body">
+        <p class="section-note">Actively building — this section updates as each project ships.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <span class="status">In progress</span>
+            <h3>Full-Stack Business Tool</h3>
+            <p>An enterprise-style application — inventory and billing logic — connecting a Node.js/Express backend to a SQL database.</p>
+          </article>
+          <article class="project-card">
+            <span class="status">In progress</span>
+            <h3>Algorithm Practice Log</h3>
+            <p>A running record of data structures and algorithms problems solved, with notes on approach and complexity.</p>
+          </article>
+          <article class="project-card">
+            <span class="status status-planned">Planned</span>
+            <h3>Final-Year Project</h3>
+            <p>My Computer System Project (Year 4) — details coming as scope is finalized.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-education">
+      <div class="panel-body">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>BSc Computer Science</h3>
+              <span class="edu-time">Chuka University · Final Year</span>
+              <p>Coursework spanning software engineering, data structures &amp; algorithms, database systems, computer networks, and enterprise information systems. Specializing in Advanced Data Structures and ERP Systems in the final year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-contact">
+      <div class="panel-body">
+        <p class="section-note">Open to junior developer roles, internships, and business-systems opportunities in Kenya and remote.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:dominicoyugi1@gmail.com">
+            <span class="contact-k">Email</span>
+            <span class="contact-v">dominicoyugi1@gmail.com</span>
+          </a>
+          <a class="contact-card" href="https://github.com/1-432" target="_blank" rel="noopener">
+            <span class="contact-k">GitHub</span>
+            <span class="contact-v">github.com/1-432</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/oyugi-dominic-0b0537399/" target="_blank" rel="noopener">
+            <span class="contact-k">LinkedIn</span>
+            <span class="contact-v">View Profile</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
