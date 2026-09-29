@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominic Oyugi — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div class="splash" id="splash">
+    <h1 class="splash-title">Portfolio Website</h1>
+    <br>
+    <h2 class="splash-name">Dominic Oyugi</h2>
+    <p class="splash-tag">Full-Stack Developer</p>
+  </div>
+
+  <!-- Background Animated Elements -->
+  <div class="bg-field" id="bgField" aria-hidden="true">
+    <div class="wash wash-1"></div>
+    <div class="wash wash-2"></div>
+    <div class="wash wash-3"></div>
+  </div>
+
+  <div class="shell">
+
+    <!-- Top Identity / Hero Bar -->
+    <header class="intro-row">
+      <div class="hero-photo">
+        <img src="IMG_20250904_181438.jpg" alt="Dominic Oyugi" onerror="this.parentElement.classList.add('photo-missing')">
+      </div>
+      <div class="intro-text">
+        <p class="eyebrow">Nairobi, Kenya</p>
+        <h2>Dominic Oyugi</h2>
+        <p class="role">Full-Stack Developer · BSc CS at Chuka University</p>
+      </div>
+      <div class="status-line">
+        <span class="status-dot"></span> Available for opportunities
+      </div>
+      <a class="cv-btn" href="Dominic-Oyugi-CV.pdf" download>Download CV</a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" id="tabs" aria-label="Portfolio sections">
+      <button class="tab-btn active" data-target="about">About</button>
+      <button class="tab-btn" data-target="skills">Skills</button>
+      <button class="tab-btn" data-target="projects">Projects</button>
+      <button class="tab-btn" data-target="education">Education</button>
+      <button class="tab-btn" data-target="experience">Experience</button>
+      <button class="tab-btn" data-target="contact">Contact</button>
+    </nav>
+
+    <!-- Main Content Panels -->
+    <main class="panels-area">
+
+      <!-- ABOUT -->
+      <section class="panel active" id="panel-about">
+        <div class="panel-body about-body-clean">
+          <div class="about-text-block">
+            <div class="about-text">
+              <p>
+                I'm Dominic Oyugi, a Computer Science student at Chuka University with a strong foundation in algorithmic problem-solving and object-oriented software design. I specialize in building robust, production-oriented web applications and database systems designed for real-world operations rather than just demos.
+              </p>
+            </div>
+            <div class="facts">
+              <div class="fact">
+                <span class="fact-k">Primary Focus</span>
+                <span class="fact-v">Full-Stack Web &amp; API Development</span>
+              </div>
+              <div class="fact">
+                <span class="fact-k">Core Interest</span>
+                <span class="fact-v">Data Structures, Relational DBs &amp; ERP Systems</span>
+              </div>
+              <div class="fact">
+                <span class="fact-k">Academic Status</span>
+                <span class="fact-v">BSc Computer Science, Final Year</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="panel" id="panel-skills">
+        <div class="panel-body skills-body">
+          <div class="mockup editor-mockup bg-code">
+            <div class="mockup-intro">Tech Stack</div>
+            <div class="mockup-topbar">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="mockup-url">skills.js</span>
+            </div>
+            <div class="mockup-screen code-screen">
+<pre><span class="code-key">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">languages</span>: [<span class="code-str">'JavaScript'</span>, <span class="code-str">'SQL'</span>, <span class="code-str">'Java'</span>, <span class="code-str">'HTML5/CSS3'</span>],
+  <span class="code-prop">backend</span>: [<span class="code-str">'Node.js'</span>, <span class="code-str">'Express'</span>, <span class="code-str">'RESTful APIs'</span>],
+  <span class="code-prop">databases</span>: [<span class="code-str">'MySQL'</span>, <span class="code-str">'SQLite'</span>, <span class="code-str">'PostgreSQL'</span>],
+  <span class="code-prop">foundations</span>: [<span class="code-str">'Data Structures'</span>, <span class="code-str">'Algorithms'</span>, <span class="code-str">'OOAD'</span>]
+};</pre>
+            </div>
+          </div>
+          <div class="tags-wrap">
+            <div class="skill-card">
+              <h3>Development &amp; APIs</h3>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Git</span>
+              </div>
+              <p class="skill-note">Building robust backends with schema validation, authentication, and structured database queries.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Engineering Foundations</h3>
+              <div class="tags">
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">OOAD</span>
+                <span class="tag">Relational Modeling</span>
+              </div>
+              <p class="skill-note">Analyzing algorithmic complexity, clean architecture, and designing scalable system schemas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="panel" id="panel-projects">
+        <div class="panel-body">
+          <div class="mockup laptop-mockup bg-nodes">
+            <div class="mockup-intro">Featured Project UI</div>
+            <div class="mockup-topbar">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="mockup-url">student-records-manager.app</span>
+            </div>
+            <div class="mockup-screen">
+              <div class="mini-table">
+                <div class="mini-row mini-head"><span>Name</span><span>Score</span><span>Status</span></div>
+                <div class="mini-row"><span>Angela</span><span>85</span><span class="mini-badge">Enrolled</span></div>
+                <div class="mini-row"><span>Dominic</span><span>92</span><span class="mini-badge">Enrolled</span></div>
+                <div class="mini-row"><span>Gregory</span><span>78</span><span class="mini-badge">Enrolled</span></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="card-top">
+                <span class="status">Completed</span>
+              </div>
+              <h3>Student Records Manager</h3>
+              <p>Full-stack CRUD system featuring database persistence, parameterized queries, and responsive record manipulation.</p>
+              <div class="project-links">
+                <a class="project-btn primary" href="https://portfolio2-pink-pi.vercel.app" target="_blank" rel="noopener">Live Demo &rarr;</a>
+                <a class="project-btn secondary" href="https://github.com/1-432/student-records-manager" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <span class="status">Completed</span>
+              </div>
+              <h3>Algorithm Practice Log</h3>
+              <p>Collection of optimal solutions covering arrays, string manipulation, trees, and dynamic programming patterns.</p>
+              <div class="project-links">
+                <a class="project-btn secondary" href="https://github.com/1-432/algorithm-practice-log" target="_blank" rel="noopener">View Solutions &rarr;</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="card-top">
+                <span class="status status-planned">In Development</span>
+              </div>
+              <h3>Final-Year Capstone Project</h3>
+              <p>Comprehensive enterprise management system incorporating role-based authentication, transactional workflows, and reporting.</p>
+              <div class="project-links">
+                <span class="project-status-note">Scope &amp; Architecture Phase</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="panel" id="panel-education">
+        <div class="panel-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>BSc in Computer Science</h3>
+                <span class="edu-time">Chuka University · 4th Year / Finalist</span>
+                <p>Focused coursework in Software Engineering, Data Structures &amp; Algorithms, Database Management Systems (RDBMS), Operating Systems, and Enterprise Computing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="panel" id="panel-experience">
+        <div class="panel-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Software Developer Intern (Industrial Attachment)</h3>
+                <span class="edu-time">St. Paul's Gekano Boys Senior School · 12 Weeks</span>
+                <p>Engineered and deployed a school administrative registration and authentication module:</p>
+                <ul class="exp-bullets">
+                  <li>Built a secure JSP frontend interfaced with a structured MySQL database.</li>
+                  <li>Deployed the application into the active school ICT infrastructure for daily administrative use.</li>
+                  <li>Authored technical project documentation, database schemas, and daily system logbooks.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW: No phone mockup. Full width, no duplicate cards, no text wrapping errors -->
+<section class="panel" id="panel-contact">
+  <div class="panel-body contact-body-clean">
+    <div class="contact-header-text">
+      <p class="section-note">Open to junior developer roles, software internships, and freelance projects in Kenya and remote.</p>
+    </div>
+    
+    <!-- 3 Direct Contact Cards Across the Top -->
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:dominicoyugi1@gmail.com">
+        <span class="contact-k">Email Directly</span>
+        <span class="contact-v">dominicoyugi1@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/1-432" target="_blank" rel="noopener">
+        <span class="contact-k">GitHub Profile</span>
+        <span class="contact-v">github.com/1-432</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/oyugi-dominic-0b0537399/" target="_blank" rel="noopener">
+        <span class="contact-k">LinkedIn</span>
+        <span class="contact-v">Dominic Oyugi</span>
+      </a>
+    </div>
+
+    <!-- Contact Form Center Stage -->
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <input type="text" id="cfName" placeholder="Your Name" required>
+        <input type="email" id="cfEmail" placeholder="Your Email Address" required>
+      </div>
+      <textarea id="cfMessage" rows="4" placeholder="Your Message..." required></textarea>
+      <button type="submit" class="form-submit">Send Message &rarr;</button>
+    </form>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
